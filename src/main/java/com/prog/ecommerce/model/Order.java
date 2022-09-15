@@ -40,4 +40,15 @@ public class Order implements Serializable {
     @ManyToOne
     @JoinColumn(name = "payment_id")
     private Payment payement;
+
+    @Getter
+    @AllArgsConstructor
+    @EqualsAndHashCode
+    @ToString
+    public static class RegistrationRequest {
+        private final String firstName;
+        private final String lastName;
+        private final String email;
+        private final String password;
+    }
 }

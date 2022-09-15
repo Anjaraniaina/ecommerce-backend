@@ -1,5 +1,7 @@
-package com.prog.ecommerce.service;
+package com.prog.ecommerce.controller;
 
+import com.prog.ecommerce.model.Order;
+import com.prog.ecommerce.service.RegistrationService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,7 +11,7 @@ public class RegistrationController {
     private final RegistrationService registrationService;
 
     @PostMapping("/registration")
-    public String register(@RequestBody RegistrationRequest request) {
+    public String register(@RequestBody Order.RegistrationRequest request) {
         registrationService.register(request);
         return "Registred";
     }

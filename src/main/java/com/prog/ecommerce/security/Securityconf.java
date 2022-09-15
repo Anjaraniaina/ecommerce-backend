@@ -32,6 +32,8 @@ public class Securityconf extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/ping").permitAll()
                 .antMatchers(HttpMethod.GET, "/").permitAll()
                 .antMatchers(HttpMethod.GET, "/products").permitAll()
+                .antMatchers(HttpMethod.GET, "/products/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/categories/**").permitAll()
                 .antMatchers("/registration/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
