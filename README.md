@@ -6,4 +6,8 @@ Just run the application after loading maven.
 ![uml diagram](./doc/uml.png)
 
 ## The api specification
-(Click here)(https://petstore.swagger.io/?url=https://raw.githubusercontent.com/Anjaraniaina/ecommerce-backend/main/doc/api.yaml)
+[Click here](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/Anjaraniaina/ecommerce-backend/main/doc/api.yaml)
+
+## The mock data 
+Follow the order of insertion 
+[Stored here](./mock)
